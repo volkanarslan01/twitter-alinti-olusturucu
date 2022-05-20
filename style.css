@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #DFDBE5;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color: black;
+  font-family: Monstserrat, sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container{
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, .2);
+}
+
+.quote-text{
+  font-size: 2.75rem;
+}
+
+/* It will change font-size for long-text with JS */
+.long-quote{
+  font-size: 2rem;
+}
+
+.fa-quote-left{
+  font-size: 4rem;
+}
+
+.quote-author{
+  margin-top: 15px;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.button-container{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover{
+  filter: brightness(110%);
+}
+
+button:active{
+  transform: translate(0,0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover{
+  color: #38a1f3
+}
+.fa-twitter{
+  font-size: 1.5rem;
+}
+
+/* Media Query: Tablet or Smaller */
+/* Medya sorgularını her zaman css dosyasının sonuna ekleyin, bu şekilde daha önce yazılmış kodların önüne geçer. */
+@media screen and (max-width: 1000px) {
+  .quote-container{
+    margin: auto 10px;
+  }
+
+  .quote-text{
+    font-size: 2.5rem;
+  }
+}
